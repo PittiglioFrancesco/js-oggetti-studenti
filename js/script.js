@@ -41,7 +41,7 @@ studente.push(aggiungiStudente);
 
 
 var text = [];
-for (var j = 0; j < 4; j++){
+for (var j = 0; j < studente.length; j++){
     text.push(" " + studente[j].nome + " " + studente[j].cognome + " " + studente[j].age);
 }
 
