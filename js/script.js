@@ -27,9 +27,24 @@ var studente = [
     }
 ];
 
+var aggiungiStudente = {
+    nome: "",
+    cognome: "",
+    age: ""
+}
+
+aggiungiStudente.nome = prompt("Inserisci il nome");
+aggiungiStudente.cognome = prompt("Inserisci il cognome");
+aggiungiStudente.age = prompt("Inserisci l'età");
+
+studente.push(aggiungiStudente);
+
+
 var text = [];
-for (var j = 0; j < 3; j++){
+for (var j = 0; j < 4; j++){
     text.push(" " + studente[j].nome + " " + studente[j].cognome + " " + studente[j].age);
 }
 
 document.getElementById("demo").innerHTML = text;
+
+
