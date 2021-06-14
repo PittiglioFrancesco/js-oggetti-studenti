@@ -7,16 +7,29 @@
 
 // ex
 
-var studente = {
+var studente = [
+    {
     nome: "Francesco",
     cognome: "Pittiglio",
     age: "20"
-};
+    },
 
-var text = "";
-var x;
-for (x in studente){
-    text += studente[x] + " ";
+    {
+    nome: "Francesco",
+    cognome: "Pittiglio",
+    age: "20"
+    },
+
+    {
+    nome: "Francesco",
+    cognome: "Pittiglio",
+    age: "20"
+    }
+];
+
+var text = [];
+for (var j = 0; j < 3; j++){
+    text.push(" " + studente[j].nome + " " + studente[j].cognome + " " + studente[j].age);
 }
 
 document.getElementById("demo").innerHTML = text;
