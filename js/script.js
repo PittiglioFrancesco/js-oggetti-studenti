@@ -7,3 +7,16 @@
 
 // ex
 
+var studente = {
+    nome: "Francesco",
+    cognome: "Pittiglio",
+    age: "20"
+};
+
+var text = "";
+var x;
+for (x in studente){
+    text += studente[x] + " ";
+}
+
+document.getElementById("demo").innerHTML = text;
